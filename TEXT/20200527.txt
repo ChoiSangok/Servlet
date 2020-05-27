@@ -168,8 +168,7 @@
             page, request, session, application 
             
             
-            
-            
+           
  
  - 예외 처리 객체
       JSP 페이지에서 예외를 처리할 수 있게 사용되는 객체
@@ -223,14 +222,3 @@
      
      application 객체를 이용한다
      
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
