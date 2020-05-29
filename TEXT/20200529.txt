@@ -52,6 +52,8 @@
   <@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 
 
+
+
 + JSTL Core 태그 라이브러리
 
  - out      JSP Writer를 이용한 브라우저 출력
@@ -63,6 +65,8 @@
         ** escapeXml 속성
          true - < > & " '를 문자 그대로 출력( 기본값 )
          false - 
+
+
 
 
  - set      JSP변수 설정, 등록( 컨텍스트 영역)
@@ -81,13 +85,17 @@
  <c:set target="${객체변수명}" property="키" value="값" />
  
  
+ 
+ 
  - remove      변수 제거
  
  <c:remove var="변수명" [scope="영역"] />
         **scope 를 지정하지 않으면 모든 컨텍스트 영역의 변수를 제거한다
  
  
- - if       조건문
+ 
+ 
+ - if       조건문( 1번 사용)
  <c:if test="조건식" >
       //조건식 결과가 true 일때 수행하는 코드
  </c:if>
@@ -101,7 +109,26 @@
  
  
  
+ 
+ 
  - choose   다중 조건문
+ 
+   <c:choose>
+      <c:when test="조건1">
+         <%--조건1이 true일 때 수행하는 영역 --%>
+      </c:when>
+      <c:when test="조건1">
+         <%--조건1이 true일 때 수행하는 영역 --%>
+      </c:when>
+      ...
+      <c:otherwise>
+         <%-- 모든 조건이 false 일때 수행 --%>
+         <$-- 생략 가능함 --%>
+      </c:otherwise>
+   </c:choose>
+ 
+ 
+ 
  
  - foreach  반복문 또는 컬렉션이나 맵의 Iterator
  
