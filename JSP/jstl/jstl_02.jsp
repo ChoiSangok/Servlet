@@ -70,7 +70,3 @@ str출력 : <c:out value="${requestScope.str}"/><br>
 str출력 : <c:out value="<%=str %>"/><br>
 
 
-
-
-
-
