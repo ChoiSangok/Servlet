@@ -68,6 +68,3 @@ td:hover {
 </body>
 </html>
 
-
-
-
