@@ -15,3 +15,67 @@
          }
 
           
++ AJAX, Asynchronous JAvascript with Xml  - 중복확인에 넣어야함
+
+ - (XML을 이용한 ) 비동기식 자바스크립트 통신
+ 
+ - HTTP 통신을 자바스크립트를 이용하여 비동기식으로 수행하는 것
+ 
+ - 자바스크립트 코드로 HTTP 요청을 보내고 
+   XML 파일 형식의 응답을 비동기적으로 받아서 처리하는 기술
+   
+ - 요즘에는 응답데이터를 XML로 사용하지 않고 JSON을 사용한다
+ 
+ - 자바스크립트의 내장객체인 XMLHttpRequest 객체를 사용한다
+ 
+ - XMLHttpRequest 객체는 줄여서 XHR 로 부른다
+ 
+ - 보여지고 있는 웹페이지의 새로고침(페이지이동) 없이 서버에 요층을 보내고 응답을 받으야 할 때 사용한다
+ 
+            -> 서버의 데이터베이스 정보가 필요할 때
+            
+
++ XHR 객체
+ 
+ - XMLHttpRequest 객체
+ 
+ - AJAX 통신을 하기 위한 자바스크립트 기본 내장 객체
+ 
+ - IE 예전 버전에는 존재하지 않는 객체이며 AJAX기술은 ActiveX를 이용해 구현된다
+ 
+ 
++ XHR 객체 속성( property )
+
+ - readyState
+      XHR 객체는 준비 - 전송 - 완료 단계를 거친다 ( LifeCycle )
+      
+      readyState 는 각 단계를 표현하는 속성
+      
+      0 : UNSENT                 - open() 호출 전
+      1 : OPENED                 - open() 호출 후
+      2 : HEADERS_RECEIVED       - open() 호출 후 응답을 받기 전까지
+      3 : LOADING                - open() 
+      4 : DONE                   - XHR 동작 완료 (요청, 응답이 완료된 상태 )
+      
+ - onreadystatechange   
+      readyState 가 변경될 때마다 실행되는 이벤트 리스너
+      callback 함수로 값을 지정한다
+
+ - status
+      HTTP 응답 상태 코드
+      
+ - statusText
+      HTTP 응답 상태 메시지
+      
+      ** 상태 코드( status )는 번호 (200, 404, 405, 500, ... )
+      ** 상태 메시지( statusText ) 는 설명 ( OK, Not Found, Method Not Allowed, ... )
+
+ - responseText
+      응답 데이터를 String 타입으로 추출(파싱) 하는 속성
+ 
+ - responseXML
+      응답 데이터를 XML 타입으로 추출(파싱) 하는 속성
+       
+      
++ XHR 객체 메소드
+
