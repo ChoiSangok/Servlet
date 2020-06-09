@@ -1,0 +1,84 @@
++ XHR 객체 메소드
+
+ - void open( String method, String url, [, boolean asynch ] )
+          AJAX 요청 정보를 초기화하는 함수
+          요청 정보에 알맞게 설정하는 함수
+          
+          method - HTTP 요청 메소드를 지정하는  
+          url    - HTTP 요청 URL 을 지정
+          asynch - true(동기식), false(비동기식) [ 기본값 : true ]
+          
+          ** asynch 를 동기식(false)로 설정하면 요청에 대한 응답이 완료될 때까지
+           브라우저는 대기상태(BLOCKED)가 된다
+          
+ - void send( null )
+          GET 요청 전송 함수
+          전달 파라미터는 OPEN() 함수의 url 지정할 때 쿼리스트링으로 포함시킨다
+          
+ - void send( params )
+          POST 요청 전송 함수
+          전달 파라미터를 쿼리스트링 형식의 문자열로 params로 넣어 포함시킨다
+  
+  
+  
+          
++ JSON, JavaScript Object Notaion
+
+ - 자바스크립트 객체 표기법
+ 
+ - http://json.org/json-ko.html
+ 
+ - 통신을 할 때 데이터를 전달하기 위한 데이터 표기법으로 사용된다
+ 
+ - 통신에 참여하는 모든 시스템(각종 프로그래밍 언어)들이 공통적으로 이해할 수 있는 데이터 타입 표기법으로 자바스크립트 객체 표기법을 사용하는 것 
+ 
++ JSON의 데이터 표현 방식
+
+ - 객체, Object
+        클래스, 구조체, Map, HashTag 등을 표현할 때 사용함
+        
+        { } 로 감싸서 객체를 표현한다
+        
+        프로퍼티는 name : value 형태의 쌍으로 표현한다
+        
+        name은 문자열로 표현, value 는 어떤 타입이든지 허용
+        
+        여러 개의 프로퍼티를 표현할 때 각 프로퍼티들은 , 로 구분한다
+        
+        ex) 빈객체 -{}
+        ex) {"key1" : "value1" , "key2" : obj, "key3",123, ... }
+        
+ 
+ - 배열, Array
+        배열 , ArrayList, List, Vector, Sequence 등을 표현할 때 사용
+        
+        [] 로 감싸서 표현
+        
+        key 값 없이 요소 (데이터) 만 나열하여 표현함
+        
+        ex)   빈 배열 -[ ]
+        ex)   [ "value1","value2", obj, 123 ...]
+        
+ 
+ - 문자열, String
+
+       "data"
+ 
+ - 숫자, Number
+        data
+ 
+ - true, false, null
+ 
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+ 
