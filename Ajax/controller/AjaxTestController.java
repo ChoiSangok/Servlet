@@ -74,6 +74,3 @@ public class AjaxTestController extends HttpServlet {
 }
 
 
-
-
-
