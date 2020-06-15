@@ -1,0 +1,61 @@
++ WYSIWYG, 위지윅, 위지위그
+      What You See Is What You Get
+      
+      보이는 데로 결과물을 얻는다
+      
+      문서ㅏ 작업물을 작업하면서 보던 형태 그대로 결과물이 되는 것
+      
+      네이버스마트에디터는 WYSIWYG 웹 에디터 중 하나
+      
+
+ - 웹 WSIWYG 에디터의 종류
+ 
+      CKeditor
+      
+      Summernote
+      
+      TinyMCE
+      
+      Froala
+      
+      네이버 Smarteditor
+      
+      ...
+      
+
++ 네이버 스마트 에디터 설치 및 적용
+
+ 1. smarteditor2 라이브러리 파일(압축) 다운받기
+      압축 해제
+      
+ 2. 압축 내용 중에서 workspace 폴더 안에서 파일과 폴더들을 준비한다
+ 
+      css/
+      img/
+      js/
+      js_src/
+      
+      smart_editor2_inputarea.html
+      smart_editor2_inputarea_ie8.html
+      SmartEditor2Skin.html
+      
+      위 7개 항목(파일 3개, 폴더 4개) 를 
+      /WebContent/resources/se2/ 폴더에 삽입한다
+
+ 3. 스마트 에디터 적용하기
+      
+      - 스마트 에디터 라이브러리를 적용한다
+      
+<!-- 스마트 에디터2 라이브러리 -->
+<script type="text/javascript" src="/resources/se2/js/service/HuskyEZCreator.js" charset="utf-8"></script>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
